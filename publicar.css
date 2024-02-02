@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+
+body{  
+    margin: 0;
+    padding: 0;   
+    font-family: 'Montserrat Alternates', sans-serif;
+    background: rgb(70,105,90);
+}
+#idImagen{
+    position:absolute;
+    top:5px;
+}
+
+#registrarse{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+#contenedor,#redireccion{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%) ;
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+h1{
+    text-align:center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+    font-size: 25px;
+}
+.subtitulo{
+    font-size: 17px;
+}
+
+#idRadio,#idSubtituloRadio{
+    display:inline;
+}
+
+#contenedor{   
+     width: 60%;
+     max-width: 40%;
+}
+
+#contenedor form{
+    padding:0 40px;
+    box-sizing: border-box;
+}
+form .fila{
+    position: relative;
+    margin:30px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*textarea*/
+#contenedorTextBotones{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+#idTexto{
+    width: 94%;
+    height: 200px;
+    margin: auto;
+    border-radius: 4px;
+    max-height: 200px; 
+    overflow-y: auto; 
+    border: #273a32 1px solid;
+    background: #EEE;
+    position: relative; /* Asegura que los spans ocultos se posicionen correctamente */
+    margin-left: 14px;
+}
+  
+  #idTexto .oculto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent; /* Hace que el texto dentro del span no sea visible */
+  }
+#contenedorBotones{
+    display: flex;
+    flex-direction: column;
+    width: 6%;
+}
+#contenedorBotones button{
+    width: 100%;
+    background-color: #cccbcb;
+}
+/*input files*/
+.file{
+    display:none;
+}
+.labelInput{
+    display:flex;
+    margin-left: 10px;
+    flex:1;
+
+}
+.file_texto{
+background: #EEE;
+border: 1px solid #cacaca;
+flex:1;
+border-radius: 4px 0 0 4px;
+
+}
+.file_texto span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    display: block;
+    padding-left: 15px;
+    
+}
+.file_boton{
+background: #46695A url(./imagenes/folder.png) 4px  center/25px no-repeat;
+border: 1px solid #46695A;
+color: white;
+white-space: nowrap; /*para que quede todo el texto en una sola linea */
+border-radius:  0 4px 4px 0 ;
+padding-left:37px;
+cursor: pointer;
+width: 20%;
+}
+.botonBorrar{
+    display: inline;
+    background-color: #46695A;
+    color:white;
+    border: 1px solid #46695A;
+    border-radius:  0 4px 4px 0 ;
+    margin-left: -1px;
+    cursor: pointer;
+    font-size: 17px;
+    width: 20%;
+}
+
+.file_boton,.file_texto{
+    padding-bottom:5px;
+    padding-top:5px;
+
+}
+
+/*select*/
+.filaOculta select{
+	display: inline-block;
+	width: 95%;
+	cursor: pointer;
+  	height: 34px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+    background: #EEE;
+	color: black;
+	color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.25s ease;
+    text-align: center;
+    margin-left: 15px;
+
+}
+ 
+.filaOculta select:hover{
+	background: rgb(230, 227, 227);
+}
+
+
+/*input time*/
+
+#idHoraInput { 
+    margin-left: 15px;
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    background: #EEE;
+    text-align: center;
+} 
+#idHoraInput:hover{
+	background: rgb(230, 227, 227);
+}
+
+
+#idBoton{
+    width:100%;
+    height:50px;
+    border:1px solid;
+    background-color: #46695A;
+    border-radius:25px;
+    font-size:18px;
+    color:white;
+    cursor:pointer;
+    outline:none;
+    transition: background-color 0.5s ease-in-out;
+    margin-bottom: 5px;
+}
+
+#idBoton:hover{
+    background-color:#273a32;
+}
+
+strong {
+    font-weight: bold;
+  }
+
+/*fila oculta */
+.filaOculta{
+    display: none;
+    position: relative;
+    margin:30px 0;
+    justify-content: center;
+    flex-direction: column;
+}
+#idError{
+    color:red;
+}
+
+#imagenPublicacion{
+	max-width: 600px; /* Limita el ancho máximo a 600px */
+	max-height: 400px; /* Limita la altura máxima a 400px */
+	width: auto; 
+	height: auto; 
+}
